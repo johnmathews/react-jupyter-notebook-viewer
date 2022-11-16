@@ -1,25 +1,11 @@
 # React Jupyter Notebook Viewer
 
-<img src="https://raw.githubusercontent.com/mtetik98/react-jupyter-notebook-viewer/main/static/logo.webp" align="right" width="200" />
 
-[![Version](https://img.shields.io/npm/v/react-jupyter-notebook-viewer?style=flat-square)](https://www.npmjs.com/package/react-jupyter-notebook-viewer)
-[![Bundle Size](https://img.shields.io/bundlephobia/min/react-jupyter-notebook-viewer?style=flat-square)](https://www.npmjs.com/package/react-jupyter-notebook-viewer)
-[![Total Downloads](https://img.shields.io/npm/dm/react-jupyter-notebook-viewer?style=flat-square)](https://www.npmjs.com/package/react-jupyter-notebook-viewer)
-[![License](https://img.shields.io/npm/l/react-jupyter-notebook-viewer)](https://github.com/mtetik98/react-jupyter-notebook-viewer/blob/main/LICENSE)
-![Type](https://img.shields.io/npm/types/react-jupyter-notebook-viewer)
-![Used by](https://img.shields.io/sourcegraph/rrc/react-jupyter-notebook-viewer)
-[![React Markdown](https://img.shields.io/npm/dependency-version/react-jupyter-notebook-viewer/react-markdown)](https://www.npmjs.com/package/react-markdown)
-[![React Syntax Highlighter](https://img.shields.io/npm/dependency-version/react-jupyter-notebook-viewer/react-syntax-highlighter)](https://www.npmjs.com/package/react-syntax-highlighter)
-[![Buy Coffee](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/mtetik98)
-
----
-
-Render Jupyter notebook files easily in your React/NextJS project to showcase your notebooks.
+Render Jupyter notebook files easily in your NextJS project to showcase your notebooks.
 
 React Jupyter Notebook Viewer is a **highly customizable static** viewer for React. Therefore this package will **never ever** be transformed into an interactive Jupyter Notebook viewer.
 
 #### Try it yourself!
-- [React Sandbox Demo](https://codesandbox.io/s/react-example-react-jupyter-notebook-viewer-ti7qcf)
 - [NextJS Sandbox Demo](https://codesandbox.io/s/nextjs-example-react-jupyter-notebook-viewer-lzjcb5)
 
 ![Demo GIF](https://raw.githubusercontent.com/mtetik98/react-jupyter-notebook-viewer/3a6f854ae3f0defee44c00163cc3083d2762937f/static/demo.gif)
@@ -31,28 +17,7 @@ npm install react-jupyter-notebook-viewer
 
 ## Usage
 
-### React Applications
-
-```js
-// App.js
-import { JupyterNotebookViewer } from "react-jupyter-notebook-viewer";
-
-export default function App() {
-	return (
-		<JupyterNotebookViewer
-			filePath="/path/to/notebook" // Or a raw JSON notebook file location online
-			notebookInputLanguage="python"
-			// Rest of the properties if required.
-		/>
-	);
-}
-```
-
 ### NextJS Applications
-
-> **⚠️ DISCLAIMER**
-> 
-> Using this package in a NextJS application requires a different approach.
 
 1. Create a component using the package inside the ``/components/Notebook.js`` file:
 
